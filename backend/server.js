@@ -8,9 +8,8 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors({
-  origin: ["https://wmt-lab-test-project-sand.vercel.app","http://localhost:5173"],
-}));
+app.use(cors());
+
 app.use(express.json());
 
 app.get("/", (req, res) => {
